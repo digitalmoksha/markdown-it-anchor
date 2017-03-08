@@ -30,9 +30,26 @@
     "string": "^3.3.3"
   },
   "devDependencies": {
+    "babel-cli": "^6.2.0",
+    "babel-core": "^6.2.1",
+    "babel-plugin-add-module-exports": "^0.1.1",
+    "babel-plugin-transform-object-assign": "^6.1.18",
+    "babel-preset-env": "*",
+    "babelify": "*",
+    "browserify": "*",
     "markdown-it": "^8.3.0",
     "markdown-it-attrs": "^0.8.0",
-    "standard": "^8.6.0"
+    "standard": "^8.6.0",
+    "uglify-js": "*"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-object-assign",
+      "add-module-exports"
+    ]
   },
   "tonicExampleFilename": "demo.js"
 }
